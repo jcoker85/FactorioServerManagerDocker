@@ -38,5 +38,5 @@
     <Config Name="FSM Config" Target="/opt/factorio/config" Default="" Mode="rw" Description="(can be left as it is)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/factorio/fsm_config</Config>
     <Config Name="Factorio Port" Target="34197" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">34197</Config>
     <Config Name="Version" Target="FACTORIO_VERSION" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">stable</Config>
-    <Config Name="Game Parameters" Target="GAME_PARAMS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">stable</Config>
+    <Config Name="Game Parameters" Target="GAME_PARAMS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">--autostart</Config>
 </Container>
