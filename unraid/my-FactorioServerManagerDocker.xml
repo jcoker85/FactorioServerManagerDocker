@@ -20,7 +20,9 @@
         - Allow viewing of the server logs and current configuration.&#xD;
         - Authentication for protecting against unauthorized users&#xD;
         &#xD;
-        Check the Log of the Container to see the Inital Admin Password</Overview>
+        Check the Log of the Container to see the Inital Admin Password
+        &#xD;
+        See more details here: https://github.com/jcoker85/FactorioServerManagerDocker/blob/main/README.md</Overview>
     <Category>GameServers:</Category>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/lordfiSh/unraid-docker-images/master/repo/OpenFactorioServerManager.xml</TemplateURL>
@@ -38,5 +40,5 @@
     <Config Name="FSM Config" Target="/opt/factorio/config" Default="" Mode="rw" Description="(can be left as it is)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/factorio/fsm_config</Config>
     <Config Name="Factorio Port" Target="34197" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">34197</Config>
     <Config Name="Version" Target="FACTORIO_VERSION" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">stable</Config>
-    <Config Name="Game Parameters" Target="GAME_PARAMS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">--autostart</Config>
+    <Config Name="Game Parameters" Target="GAME_PARAMS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">--autostart=true</Config>
 </Container>
