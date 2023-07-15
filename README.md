@@ -10,6 +10,6 @@ There is a list of available game parameters here: https://github.com/OpenFactor
 
 For example: 
 
-<code>--autostart --config /config/config.ini</code>
+<code>--autostart=true</code>
 
 Note that --conf, --dir, and --port parameters are already included in the startup script and should not be added here. 
