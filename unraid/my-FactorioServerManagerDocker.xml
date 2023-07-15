@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>FactorioServerManager</Name>
+    <Repository>jcoker85/factorioservermanagerdocker</Repository>
+    <Registry>https://hub.docker.com/jcoker85/factorioservermanagerdocker</Registry>
+    <Network>bridge</Network>
+    <MyIP/>
+    <Shell>sh</Shell>
+    <Privileged>false</Privileged>
+    <Support/>
+    <Project>https://github.com/OpenFactorioServerManager/factorio-server-manager</Project>
+    <Overview>A tool for managing Factorio servers &#xD;
+        This tool runs on a Factorio server and allows management of the Factorio server, saves, mods and many other features.&#xD;
+        &#xD;
+        Features&#xD;
+        - Allows control of the Factorio Server, starting and stopping the Factorio binary&#xD;
+        - Allows the management of save files, upload, download and delete saves.&#xD;
+        - Manage installed mods, upload new ones and more&#xD;
+        - Manage modpacks, so it is easier to play with different configurations&#xD;
+        - Allow viewing of the server logs and current configuration.&#xD;
+        - Authentication for protecting against unauthorized users&#xD;
+        &#xD;
+        Check the Log of the Container to see the Inital Admin Password</Overview>
+    <Category>GameServers:</Category>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/lordfiSh/unraid-docker-images/master/repo/OpenFactorioServerManager.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/lordfiSh/unraid-docker-images/main/images/factorio-server-manager.png</Icon>
+    <ExtraParams/>
+    <PostArgs/>
+    <CPUset/>
+    <DateInstalled>1689274045</DateInstalled>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/paypalme/imgeld</DonateLink>
+    <Requires/>
+    <Config Name="FSM Port" Target="80" Default="" Mode="tcp" Description="(check if Port is already used by other Contrainer)" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
+    <Config Name="FSM Saves" Target="/opt/factorio/saves" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/factorio/fsm_saves/</Config>
+    <Config Name="FSM Mods" Target="/opt/factorio/mods" Default="" Mode="rw" Description="(can be left as it is)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/factorio/fsm_mods</Config>
+    <Config Name="FSM Config" Target="/opt/factorio/config" Default="" Mode="rw" Description="(can be left as it is)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/factorio/fsm_config</Config>
+    <Config Name="Factorio Port" Target="34197" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">34197</Config>
+    <Config Name="Version" Target="FACTORIO_VERSION" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">stable</Config>
+    <Config Name="Version" Target="GAME_PARAMS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">stable</Config>
+</Container>
